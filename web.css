@@ -1,0 +1,36 @@
+.rectaangular{
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin-right:30px; 
+
+
+}
+.classbase{
+
+    display: flex;
+    
+
+}
+
+
+@media only screen and (max-width: 640px) {
+    .rectaangular{
+      
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+      
+     
+    }
+  }
+
+  .heading{
+    float: right;
+  }
+
+  span{  float: left;
+    width: 0.7em;
+    font-size: 200%;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 80%;}

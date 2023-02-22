@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+ <style>
+    #shcedule {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+
+      width: 80%;
+    }
+
+    #shcedule th {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    #shcedule td {
+      border: 1px solid #ddd;
+    }
+
+    #shcedule tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #shcedule tr:hover {
+      background-color: #ddd;
+    }
+
+    #shcedule th {
+      /* background-color: #04aa6d;
+      color: #ffff; */
+      color: black;
+    }
+	 </style>
+  <body>
+    <table id="shcedule" table="1">
+      <tr>
+        <th colspan="6">Time Table</th>
+      </tr>
+
+      <tr>
+        <th rowspan="6">Hours</th>
+
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>thu</th>
+        <th>Fri</th>
+      </tr>
+
+      <tr>
+        <th>Science</th>
+        <th>Math</th>
+        <th>Science</th>
+        <th>Maths</th>
+        <th>Arts</th>
+      </tr>
+
+      <tr>
+        <th>social</th>
+        <th>History</th>
+        <th>English</th>
+        <th>Social</th>
+        <th>sports</th>
+      </tr>
+
+      <tr>
+        <th colspan="6">Lunch</th>
+      </tr>
+      <tr>
+        <th>Science</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>Maths</th>
+        <th rowspan="2">project</th>
+      </tr>
+
+      <tr>
+        <th>social</th>
+        <th>History</th>
+        <th>English</th>
+        <th>Social</th>
+      </tr>
+    </table>
+  </body>
+</html>
