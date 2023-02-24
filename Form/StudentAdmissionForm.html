@@ -1,161 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
+  <style>
+    input {
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
 
-<style>input {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-  
-  label{
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-
+    label {
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
   </style>
-<body>
+  <body>
+    <form action="">
+      <h1>Student Registration Form</h1>
+      <img src="/img/girl.jpg" width="100px" alt="" />
 
-    <h1> Student Registration Form</h1>
-    <img src="/img/girl.jpg" width="100px" alt="">
+      <br />
+      <label for="name"
+        >Student First Name:
+        <br />
 
-    <br>
-    <label for="name">Student First Name:</label>
-    <br>
+        <input placeholder="Student First Name" type="text" name="fname" id="fname" />
+      </label>
+      <br />
 
-    <input placeholder="Student First Name" type="text" name="fname" id="sname">
-    <br />
+      <label for="name">Student Last Name:
+      <br />
 
-    <label for="name">Student Last Name:</label>
-    <br>
+      <input placeholder="Student Last Name" type="text" name="lname" id="lname" />
+      
+    </label>
+      <br />
+      <label for="name">Student Id:
+      <br />
+      <input placeholder="Your student Id" type="number" name="sId" id="sId" />
+      <br />
+      <label for="name">Student Email:</label>
+      <br />
+      <input placeholder="Enter your student Email" type="email" name="email" id="email" />
 
-    <input placeholder="Student Last Name" type="text" name="lname" id="sname">
-    <br />
-    <label for="name">Student Id:</label>
-    <br>
-    <input placeholder="Your student Id" type="number" name="sId" id="sId">
-    <br />
-    <label for="name">Student Email:</label>
-    <br>
-    <input placeholder="Enter your student Email" type="email" name="email" id="email">
+      <br />
+      <label for="mobile">Mobile Number:</label>
+      <br />
 
-    <br />
-    <label for="mobile">Mobile Number:</label>
-    <br>
+      <input placeholder="Moblie Number" type="text" name="fname" id="mnumber" />
+      <br />
+      <label for="name">Date of Birth</label>
+      <br />
 
-    <input placeholder="Moblie Number" type="text" name="fname" id="sname">
-    <br />
-    <label for="name">Date of Birth</label>
-    <br>
+      <input placeholder="dd-mm-yyyy " type="datetime-local" name="datetime" id="datetime" />
+      <br />
 
-    <input placeholder="dd-mm-yyyy " type="datetime-local" name="datetime" id="datetime">
-    <br />
+      <label for="districts"
+        >District:
+        <br />
+        <select id="distrcit">
+          <option value="kishoregoang">Kishoregoang</option>
+          <option value="dhaka">Dhaka</option>
+        </select>
+      </label>
+      <br />
+      <br />
 
-    
-    <label for="district">District:</label>
-    <select name="distrcit" id="distrcit">
+      <label for="city">City:</label>
+      <br />
 
-        <option value="Kishoregoang">Kishoregoang</option>
-        <option value="Dhaka">Dhaka</option>
+      <input placeholder="Your City" type="text" name="city" id="sname" />
+      <br />
 
-    </select>
+      <label for="Address">Address:</label>
+      <br />
+      <textarea placeholder="Address" name="address" id="address" cols="30" rows="10"></textarea>
 
- 
-    <br />
-    <br>
+      <br />
 
-    <label for="city">City:</label>
-    <br>
-
-    <input placeholder="Your City" type="text" name="city" id="sname">
-    <br />
-
-    <label for="Address">Address:</label>
-    <br />
-    <textarea name="address" id="address" cols="30" rows="10"></textarea>
-
-    <br>
-
-   
-
- 
-    <label for="course"> Course</label>
-    <br>
-    <select name="course" id="course">
+      <label for="course"> Course</label>
+      <br />
+      <select name="course" id="course">
         <option value="CSE">CSE</option>
         <option value="EEE">EEE</option>
         <option value="civil">Civil</option>
+      </select>
+      <br />
 
-    </select>
-    <br>
+      <label for="name">User Name</label>
+      <br />
+      <input placeholder="Enter your student username" type="text" name="username" id="username" />
+      <br />
 
+      <label for="name">User Password:</label>
+      <br />
+      <input
+        placeholder="Enter your student password "
+        type="password"
+        name="password"
+        id="password"
+      />
+      <br />
 
-    <label for="name">User Name</label>
-    <br>
-    <input placeholder="Enter your student username" type="text" name="username" id="username">
-    <br />
+      <label for="Gender">Gender:</label>
+      <br />
+      <input type="radio" name="male" id="male" value="male" /> Male
+      <input type="radio" name="female" id="female" value="female" /> Female
+      <br />
 
-    <label for="name">User Password:</label>
-    <br>
-    <input placeholder="Enter your student password " type="password" name="password" id="password">
-    <br />
+      <label for="Language">Language:</label>
+      <br />
+      <input type="checkbox" name="male" id="bengali" /> Bengali
+      <input type="checkbox" name="female" id="english" /> English
+      <br />
+      <label for="hobby">Hobby:</label>
+      <br />
 
-    
-
-    <label for="Gender">Gender:</label>
-    <br />
-    <input type="radio" name="male" id="male"> Male
-    <input type="radio" name="female" id="female"> Female
-    <br />
-
-
-    <label for="Language">Language:</label>
-    <br />
-    <input type="checkbox" name="male" id="male"> Bengali
-    <input type="checkbox" name="female" id="female"> English
-    <br />
-    <label for="country">country:</label>
-    <br />
-
-
-    <select name="hobby" id="hobby">
+      <select name="hobby" id="hobby">
         <option value="sleeping">sleeping</option>
         <option value="playing">Playing</option>
         <option value="tour">Tour</option>
+      </select>
 
-    </select>
+      <br />
 
-    <br />
+      <label for="file">Certifiaction File </label>
+      <br />
+      <input type="file" name="file" id="file" />
+      <br />
+      <label for="imagefile">Image file</label>
+      <input type="file" alt="Image" />
+      <br />
+      <label for="range">Range:</label>
+      <input type="range" name="range" id="range" />
 
+      <input type="button" value="submit" />
 
-
-    <label for="file">Certifiaction File </label>
-    <br>
-    <input type="file" name="file" id="file">
-    <br>
-    <label for="imagefile">Image file</label>
-    <input type="file" alt="Image">
-    <br>
-    <label for="range">Range:</label>
-<input type="range" name="range" id="range">
-        
-
-<input type="button" value="submit">
-
-
-<br>
-    <input type="button" value="reset">
-
-
-</body>
-
+      <br />
+      <input type="button" value="reset" />
+    </form>
+  </body>
 </html>
